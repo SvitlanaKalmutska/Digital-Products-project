@@ -1,0 +1,197 @@
+@media (min-width: 1800px) {
+  .header-top {
+    margin-bottom: 30vh;
+  }
+}
+
+@media (max-width: 960px) {
+  .header {
+    margin-bottom: 80px;
+  }
+
+  .about-contant__info {
+    margin-bottom: 80px;
+  }
+
+  .about-contant__info-bg {
+    flex: 0 0 39%;
+  }
+
+  .about-contant__info-more {
+    padding: 15px 3% 0 6%;
+  }
+
+  .about-contant__info-btn {
+    margin-top: 35px;
+  }
+}
+
+@media (max-width: 850px) {
+  .about-contant__portfolio {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+      "graphic web"
+      "seo mobile"
+      "services services";
+  }
+
+  .about-contant .services {
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+
+  .about-contant .grid-item__serv-text {
+    padding-top: 40px;
+  }
+
+  .about-contant .graphic,
+  .about-contant .web,
+  .about-contant .seo,
+  .about-contant .mobile {
+    padding: 0px 5px;
+  }
+}
+
+@media (max-width: 680px) {
+  body.lock {
+    overflow: hidden;
+  }
+
+  .header-top {
+    margin-bottom: 10vh;
+  }
+
+  .header-top__logo {
+    padding-left: 10px;
+    z-index: 2;
+    position: fixed;
+  }
+
+  .header-top .icon-logo {
+    color: #797888;
+  }
+
+  .header-top .icon-logo:hover {
+    color: #f6f6f6;
+  }
+
+  .header-top .menu__list {
+    display: block;
+    text-align: center;
+    flex-direction: column;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(137, 125, 138, 0.9);
+    transform: translate(0px, -100%);
+    transition: transform 0.8s ease 0s;
+    top: 0;
+    left: 0;
+    overflow: auto;
+  }
+
+  .header-top .menu__list.active {
+    transform: translate(0px, 0%);
+    z-index: 1;
+  }
+
+  .header-top .menu__list-item {
+    padding-left: 0;
+  }
+
+  .header-top .menu__list-link,
+  .header-top .menu__list-link--active {
+    display: block;
+    padding: 40px 40px;
+    font-size: 30px;
+  }
+
+  .header-top .menu__btn {
+    width: 41px;
+    height: 34px;
+    display: block;
+    position: fixed;
+    top: 40px;
+    right: 25px;
+    z-index: 2;
+  }
+
+  .header-top .menu__btn.active::before {
+    transform: rotate(45deg);
+    top: 9px;
+  }
+
+  .header-top .menu__btn.active::after {
+    transform: rotate(-45deg);
+    top: 9px;
+  }
+
+  .header-top .menu__btn.active span {
+    transform: scale(0);
+  }
+
+  .about-contant__info {
+    align-items: center;
+    position: relative;
+  }
+
+  .about-contant__info-more {
+    position: absolute;
+    top: 46%;
+    padding: 0 10px;
+  }
+
+  .text {
+    color: #4b4958;
+  }
+
+  .about-contant__info-btn {
+    color: #4b4958;
+    background-color: #f6f6f6;
+  }
+
+  .about-contant__info-bg {
+    flex: 1 1 39%;
+  }
+  .about-contant__info-more p:not(:first-child) {
+    display: none;
+  }
+}
+
+@media (max-width: 540px) {
+  .about-contant .grid-item__text {
+    font-size: 17px;
+  }
+
+  .about-contant .grid-item__title {
+    font-size: 21px;
+  }
+
+  .about-contant .graphic,
+  .about-contant .web,
+  .about-contant .seo,
+  .about-contant .mobile {
+    padding: 0px 10px;
+  }
+}
+
+@media (max-width: 460px) {
+  .about-contant__portfolio {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas:
+      "graphic" "web"
+      "mobile" "seo"
+      "services";
+  }
+
+  .about-contant .services {
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+
+  .about-contant .grid-item__serv-text {
+    font-size: 16px;
+  }
+}

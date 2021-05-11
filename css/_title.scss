@@ -1,0 +1,7 @@
+.title {
+  font-family: "ProximaNova-Semibold", sans-serif;
+  @include adaptiv-font(36, 30);
+  text-transform: uppercase;
+  color: #fefbfc;
+  text-align: center;
+}
